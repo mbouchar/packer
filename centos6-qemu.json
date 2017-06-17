@@ -3,8 +3,8 @@
   [
     {
       "type": "qemu",
-      "iso_url": "file:///home/mbouchar/Downloads/CentOS-6.9-x86_64-minimal.iso",
-      "iso_checksum": "422af57b493b8af49d485885a730c5a1d955f803fac85aa51311c393168b9080",
+      "iso_url": "./isos/CentOS-6.9-x86_64-bin-DVD1.iso",
+      "iso_checksum": "d27cf37a40509c17ad70f37bc743f038c1feba00476fe6b69682aa424c399ea6",
       "iso_checksum_type": "sha256",
       "output_directory": "output_centos_wso2test",
       "shutdown_command": "shutdown -P now",
@@ -21,12 +21,15 @@
       "ssh_password": "wso2",
       "ssh_port": 22,
       "ssh_wait_timeout": "360s",
-      "vm_name": "wso2test",
+      "vm_name": "wso2-qemu",
       "net_device": "virtio-net",
       "disk_interface": "virtio",
       "boot_wait": "2s",
+      "qemuargs": [
+        [ "-m", "1024M" ]
+      ],
       "boot_command": [
-        "<tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/centos6-ks.cfg<enter><wait>"
+        "<tab> ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/centos6-ks.cfg<enter><wait>"
       ]
     }
   ]
