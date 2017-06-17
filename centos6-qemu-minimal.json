@@ -6,7 +6,7 @@
       "iso_url": "./isos/CentOS-6.9-x86_64-minimal.iso",
       "iso_checksum": "422af57b493b8af49d485885a730c5a1d955f803fac85aa51311c393168b9080",
       "iso_checksum_type": "sha256",
-      "output_directory": "output_centos_wso2test",
+      "output_directory": "output_centos6_minimal",
       "shutdown_command": "shutdown -P now",
       "disk_size": 5000,
       "format": "qcow2",

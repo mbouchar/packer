@@ -6,7 +6,7 @@
       "iso_url": "./isos/CentOS-6.9-x86_64-bin-DVD1.iso",
       "iso_checksum": "d27cf37a40509c17ad70f37bc743f038c1feba00476fe6b69682aa424c399ea6",
       "iso_checksum_type": "sha256",
-      "output_directory": "output_centos_wso2test",
+      "output_directory": "output_centos6",
       "shutdown_command": "shutdown -P now",
       "disk_size": 5000,
       "format": "qcow2",
